@@ -1,7 +1,7 @@
 # Laravel
- ## Meu projeto Laravel
+ ## Meu projeto Laravel 😎
 
-Projeto Laravel, criada durante as aulas!!
+Projeto Laravel, criada durante as aulas!! [meu GitHub](https://github.com/diego-bortolucci27)
 
 ## Versão do Laravel: 5.6.40
 
