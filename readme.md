@@ -1,4 +1,4 @@
-# laravel
+# Laravel
  ## Meu projeto Laravel
 
 Projeto Laravel, criada durante as aulas !!
