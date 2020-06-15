@@ -1,7 +1,11 @@
 # Laravel
  ## Meu projeto Laravel
 
-Projeto Laravel, criada durante as aulas !!
+Projeto Laravel, criada durante as aulas!!
+
+Versão do Laravel: # 5.6.40
+
+# NÃO ESQUEÇA DE INSTALAR O COMPOSER!!!
 
 ![Laravel](https://user-images.githubusercontent.com/50296659/84618673-3f202a00-aea9-11ea-8110-a3b892345d3e.png)
 ---
