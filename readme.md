@@ -1,11 +1,11 @@
-# Laravel :smile:
+# Laravel
  ## Meu projeto Laravel 😎
 
 Projeto Laravel, criada durante as aulas!! [meu GitHub](https://github.com/diego-bortolucci27) :MILE
 
 ## Versão do Laravel: 5.6.40
 
-## NÃO ESQUEÇA DE INSTALAR O COMPOSER!!!
+## NÃO ESQUEÇA DE INSTALAR O COMPOSER!!! :smile:
 
 ![Laravel](https://user-images.githubusercontent.com/50296659/84618673-3f202a00-aea9-11ea-8110-a3b892345d3e.png)
 ---
