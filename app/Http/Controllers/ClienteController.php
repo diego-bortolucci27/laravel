@@ -29,4 +29,16 @@ class ClienteController extends Controller
         \App\Cliente::create($request->all());
         return redirect()->route('cliente.adicionar');
     }
+
+    public function editar($id)
+    {
+        $cliente = \App\Cliente::find($id);
+        return view('cliente.editar', compact('cliente'));
+    }
+
+    public function atualizar(Request $request, $id)
+    {
+        \App\Cliente::find($id)->update($request->all());
+        return redirect()->route('cliente.index');
+    }
 }
