@@ -31,8 +31,9 @@
             <td>{{$cliente->email}}</td>
             <td>{{$cliente->endereco}}</td>
             <td>
-                <a href="{{route('cliente.editar', $cliente->id)}}" class="btn btn-defaul">Editar</a>
-                <a href="#" class="btn btn-danger">Deletar</a>
+                <a href="" class="btn btn-defaul">Detalhe</a>
+                <a href="{{route('cliente.editar', $cliente->id)}}" class="btn btn-warning">Editar</a>
+                <a href="javascript:(confirm('Deletar esse registro?')? window.location.href='{{ route('cliente.deletar', $cliente->id) }}':false)" class="btn btn-danger">Deletar</a>
             </td>
         </tr>
 @endforeach
