@@ -32,7 +32,7 @@
         <label for="">Endereço</label>
         <input type="text" name="endereco" class="form-control" placeholder="Endereço do Cliente" value="{{$cliente->endereco}}">
     </div>
-    <button class="btn btn-info">Adicionar</button>
+    <button class="btn btn-info">Atualizar</button>
 </form>
 <!--h1>Página de Cadastro</h1-->
 
