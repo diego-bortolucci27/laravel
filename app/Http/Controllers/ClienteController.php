@@ -19,6 +19,12 @@ class ClienteController extends Controller
        return view('cliente.index', compact('clientes'));
     }
 
+    public function detalhe($id)
+    {
+        $cliente = \App\Cliente::find($id);
+        return view('cliente.detalhe', compact('cliente'));
+    }
+
     public function adicionar()
     {
         return view('cliente.adicionar');
@@ -39,6 +45,13 @@ class ClienteController extends Controller
     public function atualizar(Request $request, $id)
     {
         \App\Cliente::find($id)->update($request->all());
+        return redirect()->route('cliente.index');
+    }
+
+    public function deletar($id)
+    {
+        $cliente = \App\Cliente::find($id);
+        $cliente->delete();
         return redirect()->route('cliente.index');
     }
 }
