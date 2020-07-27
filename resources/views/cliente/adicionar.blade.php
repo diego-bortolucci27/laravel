@@ -6,7 +6,7 @@
         <div class="col-md-10">
             <div class="card">
                 <ol class="breadcrumb panel-head">
-                    <li><a href="{{route('cliente.index')}}">Cliente</a> |  </li>
+                    <li><a href="{{route('cliente.index')}}">Cliente</a> |<li>
                     <li>Adicionar</li>
                 </ol>
 
