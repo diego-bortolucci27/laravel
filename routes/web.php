@@ -116,3 +116,8 @@ Route::get('/cliente/deletar/{id}', ['uses'=>'ClienteController@deletar', 'as'=>
 // Telefone
 
 Route::get('/cliente/detalhe/{id}', ['uses'=>'ClienteController@detalhe', 'as'=>'cliente.detalhe']);
+
+/*Route::get('/telefone/addtelefone', function())
+{
+    return view('addtelefone');
+}*/
