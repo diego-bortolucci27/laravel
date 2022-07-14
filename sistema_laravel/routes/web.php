@@ -13,14 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'Olá, Mundo! :)';
-});
+Route::get('/', 'PrincipalController@principal');//Quando você utiliza o Controller ao invérs de passar uma function, passe uma string com o Nome do Controller e o @ com o nome da função dentro da Class Controller.
 
-Route::get('/sobre', function () {
-    return 'Sobre nós';
-});
+Route::get('/contato', 'ContatoController@contato');
 
-Route::get('/contato', function () {
-    return 'Contato';
-});
+Route::get('/sobrenos', 'SobreNosController@sobreNos');
