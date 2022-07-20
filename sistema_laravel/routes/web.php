@@ -18,3 +18,16 @@ Route::get('/', 'PrincipalController@principal');//Quando você utiliza o Contro
 Route::get('/contato', 'ContatoController@contato');
 
 Route::get('/sobrenos', 'SobreNosController@sobreNos');
+
+// nome, categoria, assunto, mensagem
+// Para indicar parâmetros em uma rota, basta você colocar chaves -> Route::get('/contato/{}' ..... ) com o ? quer dizer q o parametro é opcional
+Route::get('/contato/{nome?}/{categoria?}/{assunto?}/{msg?}', 
+        function (
+            string $nome = 'nome', 
+            string $categoria = 'categoria', 
+            string $assunto = 'assunto', 
+            string $msg = 'mensagem'
+        ) 
+        {
+            echo 'Estamos aqui: ' . $nome . ' - ' . $categoria . ' - ' . $assunto . ' - ' . $msg;
+        });
