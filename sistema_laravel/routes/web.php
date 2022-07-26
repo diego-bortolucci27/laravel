@@ -23,7 +23,7 @@ Route::get('/login', function(){ return 'Login'; })->name('site.login');
 
 Route::prefix('/app')->group(function(){
     Route::get('/clientes', function(){ return 'Clientes'; })->name('app.clientes');
-    Route::get('/fornecedores', function(){ return 'Fornecedores'; })->name('app.fornecedores');
+    Route::get('/fornecedor', 'FornecedorController@index')->name('app.fornecedor');
     Route::get('/produtos', function(){  return 'Produtos'; })->name('app.produtos');
 });
 
@@ -47,6 +47,7 @@ Route::get('/rota2', function(){ return redirect()->route('site.rota1'); })->nam
 
 //Route::redirect('/rota2', '/rota1');
 
+Route::get('/teste/{p1}/{p2}', 'TesteController@teste')->name('teste');
 
 //Rota de Fallback - Rota/página de erro - de rota inexistente
 Route::fallback(function (){
